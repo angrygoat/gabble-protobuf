@@ -1,0 +1,26 @@
+syntax = "proto3";
+/*
+Represents a request to authenticate a user
+*/
+message AuthRequest {
+  string host = 1;
+  int32 port = 2;
+  string zone = 3;
+  enum AuthType {
+    STANDARD = 0;
+    PAM = 1;
+  }
+  AuthType AuthType = 4;
+  string user = 5;
+  string password = 6;
+  string proxyUser = 7;
+  string info = 8;
+}
+
+
+/*
+Represents a response to the auth request
+*/
+message AuthResponse {
+    int32 responseCode = 1;
+}
