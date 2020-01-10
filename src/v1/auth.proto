@@ -10,7 +10,7 @@ message AuthRequest {
     STANDARD = 0;
     PAM = 1;
   }
-  AuthType AuthType = 4;
+  AuthType authType = 4;
   string user = 5;
   string password = 6;
   string proxyUser = 7;
