@@ -1,4 +1,6 @@
 syntax = "proto3";
+option java_package = "org.angrygoat.proto";
+
 /*
 Represents a request to authenticate a user
 */
